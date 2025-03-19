@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado de tu vehiculo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/tracking.css">
+</head>
+<header>
+    <a id="botonhome" href="index.html"><img id="logocabecera" src="media/logotransparente.png" alt="logo"></a>
+    <div id="cabecera">
+        <a id="botonescabecera" href="tarifas.html"><b>Tarifas</b></a>
+        <a id="botonescabecera" href="trabajosrealizados.html"><b>Trabajos Realizados</b></a>
+        <a id="botonescabecera" href="presupuestoonline.html"><b>Presupuesto Online</b></a>
+        <a id="botonescabecera" href="contacto.html"><b>Contacto</b></a>
+        <a id="botonescabecera" href="tracking.html"><b>Tracking</b></a>
+    </div>
+</header>
+<body>
+
+    <!--FrameWork para crear un seguimiento sobre el estado de tu vehiculo, incluyendo
+    fotografias, fechas y información.
+    El codigo fue extraido de un post de StackOverflow, donde un chico subió su ejemplo y lo hemos editado para que tuviese relación com
+    nuesto servicio de pintura.-->
+    <!--En esta parte del codigo en html, define algunas variables para ser utilizado con JS donde mas tarde comentaremos.-->
+    <!--Aqui simplemente divide los apartados por divs, coloca titulos y les atribuye class-->
+    <div id="container">
+        <h1><b>Seguimiento de tu coche</b></h1>
+        <div class="tracking-search">
+            <input type="text" id="order-id" placeholder="Prueba con 12345 o 67890">
+            <button onclick="trackOrder()">Buscar</button>
+        </div>
+        
+        <div id="order-details" class="hidden">
+            <div class="order-info">
+                <h2>Pedido #<span id="display-order-id">12345</span></h2>
+                <p>Vehículo: <span id="vehicle-model">Audi RS5</span></p>
+                <p>Fecha de entrada: <span id="entry-date">10/05/2023</span></p>
+                <p>Fecha estimada de finalización: <span id="estimated-completion">25/05/2023</span></p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item active">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Recepción del vehículo</h3>
+                        <p>Tu vehículo ha sido recibido en nuestro taller.</p>
+                        <span class="timeline-date">15/05/2023</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item active">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Evaluación inicial</h3>
+                        <p>Hemos realizado la evaluación inicial y planificado el trabajo.</p>
+                        <span class="timeline-date">16/05/2023</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item active">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Trabajo en progreso</h3>
+                        <p>Estamos trabajando en tu vehículo según lo planificado.</p>
+                        <span class="timeline-date">18/05/2023</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Control de calidad</h3>
+                        <p>Verificación final de todos los trabajos realizados.</p>
+                        <span class="timeline-date">Pendiente</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Listo para recoger</h3>
+                        <p>Tu vehículo está listo para ser recogido.</p>
+                        <span class="timeline-date">Pendiente</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-gallery">
+                <h3>Fotos del progreso</h3>
+                <div class="gallery-images">
+                    <img src="media/estadors511.png" alt="Progreso 1">
+                    <img src="media/estadors512.png" alt="Progreso 2">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Conexión con el script y con paginas de framework que ofrecen soporte a los scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

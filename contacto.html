@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacta con nosotros</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/contacto.css">
+</head>
+<header>
+    <a id="botonhome" href="index.html"><img id="logocabecera" src="media/logotransparente.png" alt="logo"></a>
+    <div id="cabecera">
+        <a id="botonescabecera" href="tarifas.html"><b>Tarifas</b></a>
+        <a id="botonescabecera" href="trabajosrealizados.html"><b>Trabajos Realizados</b></a>
+        <a id="botonescabecera" href="presupuestoonline.html"><b>Presupuesto Online</b></a>
+        <a id="botonescabecera" href="contacto.html"><b>Contacto</b></a>
+        <a id="botonescabecera" href="tracking.html"><b>Tracking</b></a>
+    </div>
+</header>
+<body>
+    <div id="container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h1>Contacta con nosotros</h1>
+                <p>Rellena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+            </div>
+
+            <form id="contact-form" onsubmit="return handleSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" title="Introduce un número de teléfono válido de 9 dígitos" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="razon">Razón de contacto</label>
+                    <select id="razon" name="razon" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="presupuesto">Solicitar presupuesto</option>
+                        <option value="informacion">Información general</option>
+                        <option value="cita">Reservar cita</option>
+                        <option value="reclamacion">Reclamación</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        Acepto la política de privacidad y el tratamiento de mis datos personales
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-button">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="JS/contacto.js"></script>
+</body>
+<footer>
+    <img id="logofooter" src="media/logotransparente.png" alt="Logo">
+    <p id="derechos">Todos los derechos reservados a G&G Original Paintworks</p>
+</footer>
+</html>
+

@@ -1,0 +1,153 @@
+/*El CSS estaba incluido en el FrameWork y nos costó entenderlo
+ya que define algunas variables con el . pero conseguimos adaptarlo para que tuviera
+un diseño parecido al de la pagina*/
+
+#container {
+    margin-top: 15em;
+    margin-left: 10em;
+    margin-right: 10em;
+    position: relative;
+    padding-bottom: 4em;
+  }
+  
+  h1 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 2em;
+    color: #091010;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .tracking-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+  }
+  
+  .tracking-search input {
+    padding: 10px 15px;
+    width: 300px;
+    border: 1px solid #84a365;
+    border-radius: 50px 0 0 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .tracking-search button {
+    padding: 10px 20px;
+    background-color: #84a365;
+    color: white;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s;
+  }
+  
+  .tracking-search button:hover {
+    background-color: #6b8a4e;
+  }
+  
+  .order-info {
+    background-color: #84a365;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 2em;
+  }
+  
+  .order-info h2 {
+    margin-top: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  /* Timeline styles */
+  .timeline {
+    position: relative;
+    margin: 2em 0;
+    padding: 0 20px;
+  }
+  
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height: 100%;
+    width: 4px;
+    background: #84a365;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 70px;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: 48px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #e1e4d1;
+    border: 4px solid #84a365;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item.active .timeline-dot {
+    background: #84a365;
+  }
+  
+  .timeline-content {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-item.active .timeline-content {
+    background: #e8f0df;
+  }
+  
+  .timeline-content h3 {
+    margin-top: 0;
+    color: #091010;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+  }
+  
+  .timeline-date {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  /* galeria */
+  .order-gallery {
+    margin-top: 3em;
+  }
+  
+  .order-gallery h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-bottom: 1em;
+  }
+  
+  .gallery-images {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+  }
+  
+  .gallery-images img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+    

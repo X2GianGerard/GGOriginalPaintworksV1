@@ -1,0 +1,140 @@
+#container {
+  margin-top: 15em;
+  margin-left: 10em;
+  margin-right: 10em;
+  position: relative;
+  padding-bottom: 4em;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4em;
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  padding-right: 2em;
+  border-right: 1px solid #e1e4d1;
+}
+
+.contact-info h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #091010;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.contact-info p {
+  color: #666;
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+.contact-details {
+  margin-top: 2em;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 1em;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+#nombre {
+  margin-left: 0px;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #091010;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #e1e4d1;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #84a365;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5em;
+}
+
+.submit-button {
+  background-color: #84a365;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #6b8a4e;
+}
+
+/* Estilos para campos inválidos */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: #ff4444;
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+  color: #ff4444;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
